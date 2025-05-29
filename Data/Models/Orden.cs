@@ -1,6 +1,6 @@
 ﻿namespace ElectivaI.Data.Models;
 
-public partial class Orden
+public class Orden
 {
     public int IdOrden { get; set; }
 

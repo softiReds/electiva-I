@@ -1,6 +1,6 @@
 ﻿namespace ElectivaI.Data.Models;
 
-public partial class Inventario
+public class Inventario
 {
     public int IdInventario { get; set; }
 
