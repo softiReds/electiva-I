@@ -1,6 +1,6 @@
 ﻿namespace ElectivaI.Data.Models;
 
-public partial class Categoria
+public class Categoria
 {
     public int IdCategoria { get; set; }
 
