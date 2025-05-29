@@ -1,6 +1,6 @@
 ﻿namespace ElectivaI.Data.Models;
 
-public partial class TipoEmpleado
+public class TipoEmpleado
 {
     public int IdTipoEmpleado { get; set; }
 
