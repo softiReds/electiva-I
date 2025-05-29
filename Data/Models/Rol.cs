@@ -1,6 +1,6 @@
 ﻿namespace ElectivaI.Data.Models;
 
-public partial class Rol
+public class Rol
 {
     public int IdRol { get; set; }
 
