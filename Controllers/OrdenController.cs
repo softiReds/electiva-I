@@ -121,6 +121,23 @@ public class OrdenController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// Elimina una orden existente del sistema
+    /// </summary>
+    /// <param name="id">Identificador único de la orden que se desea eliminar</param>
+    /// <returns>
+    /// - NoContent (204): Si la orden fue eliminada exitosamente
+    /// - NotFound (404): Si no se encuentra una orden con el ID especificado
+    /// </returns>
+    /// <remarks>
+    /// Esta operación es irreversible. Una vez eliminada la orden, no podrá ser recuperada.
+    /// Ejemplo de uso:
+    /// 
+    ///     DELETE /api/orden/5
+    /// 
+    /// </remarks>
+    /// <response code="204">La orden fue eliminada exitosamente</response>
+    /// <response code="404">No se encontró la orden con el ID especificado</response>
     [HttpDelete("{id:int}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
