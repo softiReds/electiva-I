@@ -18,7 +18,7 @@ public partial class ElectivaIContext : DbContext
 
     public virtual DbSet<Empleado> Empleados { get; set; }
 
-    public virtual DbSet<Inventario> Inventarios { get; set; }
+    public virtual DbSet<Inventario> Inventario { get; set; }
 
     public virtual DbSet<Orden> Ordens { get; set; }
 
