@@ -66,9 +66,6 @@ public class CategoriaController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult Create([FromBody] Categoria categoria)
     {
-        if (string.IsNullOrWhiteSpace(categoria.NombreCategoria))
-            return BadRequest("El nombre de la categoría es obligatorio.");
-
         _dbContext.Categoria.Add(categoria);
         _dbContext.SaveChanges();
 
