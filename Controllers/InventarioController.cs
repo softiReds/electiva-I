@@ -1,5 +1,4 @@
-﻿
-using ElectivaI.Data.Context;
+﻿using ElectivaI.Data.Context;
 using ElectivaI.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
